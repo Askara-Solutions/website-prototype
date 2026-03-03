@@ -35,25 +35,25 @@ export default function FreeAnalysisPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-light-bg">
+      <main className="min-h-screen bg-parchment-2">
         <div className="mx-auto max-w-2xl px-6 py-16 md:py-24">
           {/* Back link */}
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 text-sm text-foreground/60 hover:text-brand-navy transition-colors mb-10"
+            className="inline-flex items-center gap-1.5 text-sm text-foreground/60 hover:text-navy transition-colors mb-10"
           >
             <ArrowLeft size={16} />
             Back to home
           </Link>
 
           {!submitted ? (
-            <div className="rounded-2xl bg-background p-8 md:p-12 shadow-sm border border-[#e5e5e5]">
+            <div className="rounded-2xl bg-background p-8 md:p-12 shadow-sm border border-border">
               {/* Header */}
               <div className="text-center mb-10">
                 <div className="flex justify-center mb-6">
                   <AskaraLogo size="large" />
                 </div>
-                <h1 className="text-3xl md:text-4xl font-extrabold text-brand-navy text-balance">
+                <h1 className="text-3xl md:text-4xl font-extrabold text-navy text-balance">
                   Get Your Free Security Analysis
                 </h1>
                 <p className="mt-4 text-foreground/70 leading-relaxed max-w-md mx-auto">
@@ -79,7 +79,7 @@ export default function FreeAnalysisPage() {
                     placeholder="Jane Smith"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="rounded-xl border border-[#e5e5e5] bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground/40 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 transition"
+                    className="rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground/40 focus:border-green focus:ring-2 focus:ring-green/20 transition"
                   />
                 </div>
 
@@ -98,7 +98,7 @@ export default function FreeAnalysisPage() {
                     placeholder="jane@company.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="rounded-xl border border-[#e5e5e5] bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground/40 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 transition"
+                    className="rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground/40 focus:border-green focus:ring-2 focus:ring-green/20 transition"
                   />
                 </div>
 
@@ -117,12 +117,12 @@ export default function FreeAnalysisPage() {
                     placeholder="Acme Inc."
                     value={company}
                     onChange={(e) => setCompany(e.target.value)}
-                    className="rounded-xl border border-[#e5e5e5] bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground/40 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 transition"
+                    className="rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-foreground/40 focus:border-green focus:ring-2 focus:ring-green/20 transition"
                   />
                 </div>
 
                 {/* Newsletter checkbox */}
-                <div className="mt-2 rounded-xl bg-light-bg p-4">
+                <div className="mt-2 rounded-xl bg-parchment-2 p-4">
                   <label
                     htmlFor="newsletter"
                     className="flex items-start gap-3 cursor-pointer"
@@ -132,7 +132,7 @@ export default function FreeAnalysisPage() {
                       type="checkbox"
                       checked={newsletter}
                       onChange={(e) => setNewsletter(e.target.checked)}
-                      className="mt-0.5 h-5 w-5 shrink-0 rounded border-[#e5e5e5] accent-brand-green cursor-pointer"
+                      className="mt-0.5 h-5 w-5 shrink-0 rounded border-border accent-green cursor-pointer"
                     />
                     <div>
                       <span className="text-sm font-medium text-foreground">
@@ -150,7 +150,7 @@ export default function FreeAnalysisPage() {
                 {/* Submit */}
                 <button
                   type="submit"
-                  className="mt-4 w-full rounded-full bg-brand-green px-6 py-3.5 text-base font-bold text-brand-navy hover:brightness-95 transition"
+                  className="mt-4 w-full rounded-full bg-green-hover px-6 py-3.5 text-base font-bold text-navy hover:brightness-95 transition"
                 >
                   {"Submit & Get Your Free Analysis \u2192"}
                 </button>
@@ -163,13 +163,13 @@ export default function FreeAnalysisPage() {
             </div>
           ) : (
             /* Success state */
-            <div className="rounded-2xl bg-background p-8 md:p-12 shadow-sm border border-[#e5e5e5] text-center">
+            <div className="rounded-2xl bg-background p-8 md:p-12 shadow-sm border border-border text-center">
               <div className="flex justify-center mb-6">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-green/15">
-                  <CheckCircle2 className="h-8 w-8 text-brand-green" />
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-hover/15">
+                  <CheckCircle2 className="h-8 w-8 text-green" />
                 </div>
               </div>
-              <h2 className="text-2xl md:text-3xl font-extrabold text-brand-navy">
+              <h2 className="text-2xl md:text-3xl font-extrabold text-navy">
                 Thank you, {name}!
               </h2>
               <p className="mt-4 text-foreground/70 leading-relaxed max-w-md mx-auto">
@@ -179,7 +179,7 @@ export default function FreeAnalysisPage() {
               </p>
               <Link
                 href="/"
-                className="mt-8 inline-flex items-center gap-1.5 rounded-full bg-brand-navy px-6 py-3 text-sm font-bold text-white hover:bg-brand-navy/90 transition"
+                className="mt-8 inline-flex items-center gap-1.5 rounded-full bg-navy px-6 py-3 text-sm font-bold text-parchment-1 hover:bg-navy/90 transition"
               >
                 <ArrowLeft size={16} />
                 Back to homepage

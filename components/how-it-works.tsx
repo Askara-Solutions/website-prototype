@@ -31,13 +31,13 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-light-bg py-20 md:py-28">
+    <section id="how-it-works" className="bg-parchment-2 py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <FadeIn className="text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-4">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-green mb-4">
             How it works
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-navy text-balance">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-navy text-balance">
             From overwhelmed to certified — without the pain.
           </h2>
         </FadeIn>
@@ -45,12 +45,12 @@ export function HowItWorks() {
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           {steps.map((step) => (
             <FadeIn key={step.number}>
-              <div className="bg-background rounded-2xl p-8 h-full flex flex-col items-start shadow-sm">
-                <span className="text-4xl font-extrabold text-brand-green">
+              <div className="bg-background rounded-2xl p-8 h-full flex flex-col items-start shadow-sm border border-border">
+                <span className="text-4xl font-extrabold text-green">
                   {step.number}
                 </span>
                 <step.Icon className="w-16 h-16 mt-4" />
-                <h3 className="mt-4 text-xl font-bold text-brand-navy">
+                <h3 className="mt-4 text-xl font-bold text-navy">
                   {step.title}
                 </h3>
                 <p className="mt-3 text-foreground leading-relaxed">

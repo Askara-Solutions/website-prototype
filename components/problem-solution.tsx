@@ -9,7 +9,7 @@ export function ProblemSolution() {
     <section id="why-askara" className="bg-background py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <FadeIn>
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-4 text-center">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-green mb-4 text-center">
             Why Askara
           </p>
         </FadeIn>
@@ -19,7 +19,7 @@ export function ProblemSolution() {
           <FadeIn>
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <PaperworkIllustration className="w-48 h-auto mb-8" />
-              <h2 className="text-2xl md:text-3xl font-bold text-brand-navy text-balance">
+              <h2 className="text-2xl md:text-3xl font-bold text-navy text-balance">
                 Compliance theater is everywhere.
               </h2>
               <p className="mt-4 text-foreground leading-relaxed max-w-md">
@@ -35,7 +35,7 @@ export function ProblemSolution() {
           <FadeIn>
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <ConfidentTeamIllustration className="w-48 h-auto mb-8" />
-              <h2 className="text-2xl md:text-3xl font-bold text-brand-navy text-balance">
+              <h2 className="text-2xl md:text-3xl font-bold text-navy text-balance">
                 We make security actually stick.
               </h2>
               <p className="mt-4 text-foreground leading-relaxed max-w-md">

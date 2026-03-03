@@ -26,13 +26,13 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="bg-background py-20 md:py-28">
+    <section className="bg-parchment-2 py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <FadeIn className="text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-4">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-green mb-4">
             What teams say
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-brand-navy text-balance max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-navy text-balance max-w-3xl mx-auto">
             Teams who stopped performing security — and started living it.
           </h2>
         </FadeIn>
@@ -40,12 +40,12 @@ export function Testimonials() {
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           {testimonials.map((t) => (
             <FadeIn key={t.name}>
-              <div className="bg-background border border-[#e5e5e5] rounded-2xl p-8 h-full flex flex-col shadow-sm border-l-4 border-l-brand-green">
+              <div className="bg-background border border-border rounded-2xl p-8 h-full flex flex-col shadow-sm border-l-4 border-l-green">
                 <blockquote className="text-foreground leading-relaxed flex-1">
                   {"\u201C"}{t.quote}{"\u201D"}
                 </blockquote>
-                <div className="mt-6 pt-4 border-t border-[#e5e5e5]">
-                  <p className="font-bold text-brand-navy">{t.name}</p>
+                <div className="mt-6 pt-4 border-t border-border">
+                  <p className="font-bold text-navy">{t.name}</p>
                   <p className="text-sm text-foreground/60">
                     {t.role}, {t.company}
                   </p>

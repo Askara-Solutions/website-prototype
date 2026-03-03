@@ -36,13 +36,13 @@ const benefits = [
 
 export function KeyBenefits() {
   return (
-    <section id="for-teams" className="bg-brand-navy py-20 md:py-28">
+    <section id="for-teams" className="bg-grad-night-forest py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <FadeIn className="text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-green mb-4">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-green mb-4">
             Built for real teams
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white text-balance">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-parchment-1 text-balance">
             Everything compliance should be. Finally.
           </h2>
         </FadeIn>
@@ -52,11 +52,11 @@ export function KeyBenefits() {
             <FadeIn key={b.label}>
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 mt-1">
-                  <b.icon className="h-6 w-6 text-brand-green" strokeWidth={1.5} />
+                  <b.icon className="h-6 w-6 text-green" strokeWidth={1.5} />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-white">{b.label}</h3>
-                  <p className="mt-1 text-sm text-white/70">{b.desc}</p>
+                  <h3 className="text-base font-bold text-parchment-1">{b.label}</h3>
+                  <p className="mt-1 text-sm text-parchment-1/70">{b.desc}</p>
                 </div>
               </div>
             </FadeIn>
